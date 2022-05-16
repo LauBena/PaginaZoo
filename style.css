@@ -1,0 +1,287 @@
+body{
+    background-color:rgba(79, 163, 163, 0.733);
+}
+
+
+.carousel-item{
+    height: 110vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.imagen1carrousel{
+    background-image: url('img/carrousel1.jpg');
+}
+
+.imagen2carrousel{
+    background-image: url('img/carrousel3.jpg');
+}
+
+.imagen3carrousel{
+    background-image: url('img/carrousel2.jpeg');
+}
+
+.titulos{
+    color: aliceblue;
+    font-size: 3em;
+    padding-top: 1rem;
+    text-shadow: -4px 7px 5px rgb(94, 93, 93);
+}
+
+.hrTitulos{
+    border: 2px solid aliceblue;
+    width: 15%;
+    box-shadow:  -2px 2px 4px rgb(94, 93, 93);
+}
+
+.parrafosHistoria{
+    text-align: justify;
+    line-height: 1.9;
+    font-size: 1.2em;
+}
+
+#animales, #mapa{
+    background-color: rgba(90, 179, 179, 0.479);
+}
+
+
+/* ACA ACOMODAMOS EL TAMAÑO DE LAS IMAGENES DENTRO DE LAS CARDS */
+
+.card-img-top{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.margeninferiorCard{
+    margin-bottom: 30px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card-body{
+  padding: 0;
+}
+
+/* ACA APLICAMOS LAS PROPIEDADES DEL MAPA DEL ZOOLOGICO */
+
+.tamañoMapa{
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mapaZoologico{
+    background-image: url('img/Mapazoo.jpg');
+}
+
+.font-size-2em{
+    font-size: 1.9em;
+}
+
+
+.table{
+    font-size: 1.3em;
+}
+
+/* ACA VAMOS A SETEAR TODAS LAS PROPIEDADES CSS DEL FOOTER DE LA PAGINA */
+.footer{
+  background-color: #343a40 !important;
+  height: 12rem;
+}
+
+.titulofooter{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 1em;
+}
+
+.social-icon{
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon li{
+  list-style: none;
+  display: inline-block;
+  padding: 1em;
+}
+
+.social-icon li a{
+  color: #ffffff !important;
+  font-size: 2.2em;
+  padding: 10px 20px;
+  text-decoration: none;  
+}
+
+.social-icon li a:hover{
+  color: cadetblue !important;
+}
+
+
+/* ESTAS SON LAS PROPIEDADES PARA LA SECCION DEL CARROUSEL DE GUARDAPARQUES */
+#carrousel .owl-carousel img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 300px;
+  object-fit: cover;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+}
+#carrousel .owl-carousel .owl-item {
+  height: 300px;
+  position: relative;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transition: all 0.2s;
+  -webkit-transform: all 0.2s;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  #carrousel .owl-carousel .owl-item {
+    height: 270px;
+  }
+}
+@media (max-width: 380px) {
+  #carrousel .owl-carousel .owl-item {
+    height: 200px;
+  }
+}
+#carrousel .owl-carousel .owl-stage-outer {
+  padding-bottom: 10px;
+}
+#carrousel .owl-item.big {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  z-index: 3;
+}
+#carrousel .owl-item.medium {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  z-index: 2;
+}
+#carrousel .owl-item.medium.mdright {
+  /*border: solid 1px red;*/
+  position: relative;
+  left: -30px;
+}
+@media (min-width: 768px) {
+  #carrousel .owl-item.medium.mdright {
+    left: 0px;
+  }
+}
+#carrousel .owl-item.medium.mdleft {
+  /*border: solid 1px blue;*/
+  position: relative;
+  right: -30px;
+}
+@media (min-width: 768px) {
+  #carrousel .owl-item.medium.mdleft {
+    right: 0px;
+  }
+}
+#carrousel .owl-item.smallRight.active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  position: relative;
+  left: -30px;
+}
+#carrousel .owl-item.smallLeft.active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  position: relative;
+  right: -30px;
+}
+#carrousel .owl-nav {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+#carrousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  background: transparent !important;
+  color: #000 !important;
+  font-size: 40px !important;
+}
+#carrousel .owl-nav .owl-prev:hover {
+  color: #adadad !important;
+}
+#carrousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  background: transparent !important;
+  color: #000 !important;
+  font-size: 40px !important;
+}
+#carrousel .owl-nav .owl-next:hover {
+  color: #adadad !important;
+}
+
+/* ESTAS PROPIEDADES SON PARA LA SECCION DE CONTACTO. */
+#contacto{
+    background: url("img/fondoformulario.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.transparenciaImagenContacto{
+    background-color: rgba(255, 255, 255, 0.45);
+} 
+
+
+/*ESTAS PROPIEDADES SON PARA EL FORMULARIO DE CONTACTO  */
+
+#ubicacion{
+    box-shadow: 0px 0px 6px 3px rgba(90, 179, 179, 0.479) !important;
+}
+
+
+textarea{
+    resize: none;
+}
+
+
+input.form-control{
+    border: 2px solid cadetblue;
+}
+
+
+textarea.form-control{
+    border: 2px solid cadetblue;
+}
+
+input.btn:hover{
+    box-shadow: 0px 0px 6px 3px rgba(90, 179, 179, 0.479) !important;
+}
+
